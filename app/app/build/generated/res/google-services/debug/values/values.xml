@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">633069135557-pansrbf8asd03q2hd1j52nffv76o0a0j.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://sjec-notify.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">633069135557</string>
+    <string name="google_api_key" translatable="false">AIzaSyAAGiMSAGqrYu_HkUE3LwNRkNGjzYCj2wk</string>
+    <string name="google_app_id" translatable="false">1:633069135557:android:df84c9600d13bfdb38b2ac</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAAGiMSAGqrYu_HkUE3LwNRkNGjzYCj2wk</string>
+    <string name="google_storage_bucket" translatable="false">sjec-notify.appspot.com</string>
+    <string name="project_id" translatable="false">sjec-notify</string>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GalleryActivity">
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/fab2_color"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:id="@+id/backimage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_arrow_back_white_24dp"
+            />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gallery Images"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/r2"
+        >
+
+    <ImageView
+        android:id="@+id/gallery_image"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_menu_camera"
+        />
+
+        <TextView
+            android:id="@+id/gallery_validate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Validation"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/upload_gallery_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:textSize="25sp"
+            android:layout_marginTop="50dp"
+            android:background="@color/fab2_color"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

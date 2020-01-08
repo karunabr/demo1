@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusTimeActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/nav_color"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:id="@+id/backimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/ic_arrow_back_white_24dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus Details"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sc1"
+        android:layout_below="@id/r2"
+        android:scrollbars="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/li1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_below="@id/r2"
+        >
+
+        <EditText
+            android:id="@+id/bus_time"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Bus Time"
+
+            android:paddingLeft="10dp"
+            android:inputType="time"
+            android:textColor="#000"
+            />
+
+        <EditText
+            android:id="@+id/bus_number"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Bus Number"
+
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            />
+
+        <EditText
+            android:id="@+id/bus_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_design"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:lines="6"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:scrollHorizontally="false"
+            android:hint="Bus Stops"
+
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000"
+            />
+
+        <EditText
+            android:id="@+id/bus_driver_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Bus Driver Name"
+
+            android:paddingLeft="10dp"
+
+            />
+
+        <EditText
+            android:id="@+id/bus_driver_number"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Bus Driver Contact Details"
+
+            android:paddingLeft="10dp"
+            android:inputType="phone"
+            />
+
+        <TextView
+            android:id="@+id/bus_upload_validtion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="validate"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="invisible"/>
+
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:layout_below="@id/sc1"
+        >
+
+
+        <Button
+            android:id="@+id/bus_upload_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#d67601"
+            android:text="Upload"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4A000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/gallery_progress"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            style="?android:attr/progressBarStyle"
+            android:indeterminateDrawable="@drawable/cpb_4"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "633069135557",
+    "firebase_url": "https://sjec-notify.firebaseio.com",
+    "project_id": "sjec-notify",
+    "storage_bucket": "sjec-notify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633069135557:android:df84c9600d13bfdb38b2ac",
+        "android_client_info": {
+          "package_name": "com.example.sjecnotify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633069135557-2quppd86d54sk86lad2r7c81hdevkmnk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sjecnotify",
+            "certificate_hash": "9e2899d0c6fbbcf44bf551d5c5545f8a0b1b6c8e"
+          }
+        },
+        {
+          "client_id": "633069135557-pansrbf8asd03q2hd1j52nffv76o0a0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAGiMSAGqrYu_HkUE3LwNRkNGjzYCj2wk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633069135557-pansrbf8asd03q2hd1j52nffv76o0a0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

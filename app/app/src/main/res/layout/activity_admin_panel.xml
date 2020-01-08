@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sjecimage2"
+    tools:context=".AdminPanelActivity">
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:id="@+id/backimage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_arrow_back_white_24dp"
+            />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Orders"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#72FFFFFF"
+        android:layout_below="@id/r2">
+
+        <Button
+            android:id="@+id/new_notice"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="New Notice"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/buttons"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            />
+
+
+        <Button
+            android:id="@+id/change_notice"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Change Notice"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/buttons"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:id="@+id/delete_notice"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Delete Notice"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/buttons"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
